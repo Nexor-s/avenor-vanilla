@@ -1,0 +1,10 @@
+<!-- Эмблема Avenor Vanilla: гладкий белый полумесяц с мягким свечением (без пикселизации) -->
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="emblem-svg">
+  <defs>
+    <radialGradient id="moonShade" cx="38%" cy="34%" r="80%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#e4e9f5"/>
+    </radialGradient>
+  </defs>
+  <path d="M87.5 53.29 A37.5 37.5 0 1 1 46.71 12.5 A29.17 29.17 0 0 0 87.5 53.29 Z" fill="url(#moonShade)"/>
+</svg>
