@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jaroslavmazura10-web.github.io/avenor-vanilla/sitemap.xml
