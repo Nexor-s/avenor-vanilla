@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Правила — Avenor Vanilla</title>
+<meta name="description" content="Простые правила Avenor Vanilla: уважение, честная игра и комфорт для всех участников.">
+<link rel="canonical" href="https://jaroslavmazura10-web.github.io/avenor-vanilla/rules.html">
+
+<!-- Open Graph / превью при отправке ссылки в Discord, соцсети, мессенджеры -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Avenor Vanilla">
+<meta property="og:title" content="Правила — Avenor Vanilla">
+<meta property="og:description" content="Простые правила Avenor Vanilla: уважение, честная игра и комфорт для всех участников.">
+<meta property="og:image" content="https://jaroslavmazura10-web.github.io/avenor-vanilla/assets/images/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://jaroslavmazura10-web.github.io/avenor-vanilla/rules.html">
+<meta property="og:locale" content="ru_RU">
+
+<!-- Twitter Card (использует те же данные, что и Open Graph) -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Правила — Avenor Vanilla">
+<meta name="twitter:description" content="Простые правила Avenor Vanilla: уважение, честная игра и комфорт для всех участников.">
+<meta name="twitter:image" content="https://jaroslavmazura10-web.github.io/avenor-vanilla/assets/images/og-image.png">
+
+<!-- Шрифты: Cinzel (заголовки), Manrope (текст), JetBrains Mono (лейблы/эйброу) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Favicon: SVG для современных браузеров + PNG-запасные варианты -->
+<link rel="icon" href="assets/icons/emblem.svg" type="image/svg+xml">
+<link rel="icon" href="assets/icons/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+</head>
+<body>
+
+  <!-- Анимированный фон с частицами (рисуется в script.js) -->
+  <canvas id="particles-canvas"></canvas>
+  <!-- ================= НАВИГАЦИЯ ================= -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+
+      <div class="nav-pill glass">
+        <a href="index.html" class="logo">
+          <span class="emblem-slot"></span>
+          <span class="logo-text">Avenor</span>
+        </a>
+
+        <nav class="nav-links" id="navLinks">
+          <a href="about.html">О проекте</a>
+          <a href="team.html">Команда</a>
+          <a href="rules.html" class="is-active">Правила</a>
+          <a href="connect.html">Подключение</a>
+          <a href="faq.html">FAQ</a>
+          <a href="news.html">Новости</a>
+          <a href="contacts.html">Контакты</a>
+        </nav>
+      </div>
+
+      <div class="nav-side">
+        <a href="https://discord.gg/6YBYCDbmkH" class="nav-cta" target="_blank" rel="noopener noreferrer">Начать играть</a>
+        <a href="https://discord.gg/6YBYCDbmkH" class="nav-cta-icon" target="_blank" rel="noopener noreferrer" aria-label="Discord Avenor Vanilla">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.6L3 20l1-5.4A8.5 8.5 0 1 1 21 11.5Z"/></svg>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <section class="section page-hero-sm" id="page-top">
+    <div class="container">
+      <span class="eyebrow reveal">Правила</span>
+      <h1 class="section-title reveal">Простые принципы для всех</h1>
+      <p class="section-lead reveal">Несколько базовых правил, которые делают Avenor Vanilla комфортным для каждого. Полный список правил — в официальном канале проекта в Discord.</p>
+    </div>
+  </section>
+
+  <section class="section" id="rules" style="padding-top:0;">
+    <div class="container">
+      <div class="rules-grid">
+        <div class="rule-item glass reveal">
+          <span class="rule-num">1</span>
+          <div><h4>Уважение к участникам</h4><p>Мы ценим каждого — общение строится на вежливости и взаимном уважении.</p></div>
+        </div>
+        <div class="rule-item glass reveal">
+          <span class="rule-num">2</span>
+          <div><h4>Честное взаимодействие</h4><p>Обман, читы и манипуляции несовместимы с духом проекта.</p></div>
+        </div>
+        <div class="rule-item glass reveal">
+          <span class="rule-num">3</span>
+          <div><h4>Запрет нарушений</h4><p>Токсичность, оскорбления и деструктивное поведение пресекаются.</p></div>
+        </div>
+        <div class="rule-item glass reveal">
+          <span class="rule-num">4</span>
+          <div><h4>Комфорт для всех игроков</h4><p>Каждый должен чувствовать себя в безопасности, независимо от опыта.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ПОДВАЛ ================= -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <span class="emblem-slot"></span>
+          Avenor Vanilla
+        </div>
+        <nav class="footer-nav">
+          <a href="about.html">О проекте</a>
+          <a href="about.html#advantages">Преимущества</a>
+          <a href="team.html">Команда</a>
+          <a href="rules.html">Правила</a>
+          <a href="connect.html">Подключение</a>
+          <a href="faq.html">FAQ</a>
+          <a href="news.html">Новости</a>
+          <a href="contacts.html#discord">Discord</a>
+          <a href="contacts.html">Контакты</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Avenor Vanilla. Все права защищены.</span>
+        <span>Место, где создаётся история.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
