@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Avenor Vanilla — Место, где создаётся история</title>
+<meta name="description" content="Avenor Vanilla — тёплый, честный и стабильный игровой проект для тех, кто ценит спокойную атмосферу и настоящее сообщество.">
+<link rel="canonical" href="https://jaroslavmazura10-web.github.io/avenor-vanilla/">
+
+<!-- Open Graph / превью при отправке ссылки в Discord, соцсети, мессенджеры -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Avenor Vanilla">
+<meta property="og:title" content="Avenor Vanilla — Место, где создаётся история">
+<meta property="og:description" content="Ванильный игровой проект, который только открывается. Спокойная атмосфера, честные правила, настоящее сообщество.">
+<meta property="og:image" content="https://jaroslavmazura10-web.github.io/avenor-vanilla/assets/images/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://jaroslavmazura10-web.github.io/avenor-vanilla/">
+<meta property="og:locale" content="ru_RU">
+
+<!-- Twitter Card (использует те же данные, что и Open Graph) -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Avenor Vanilla — Место, где создаётся история">
+<meta name="twitter:description" content="Ванильный игровой проект, который только открывается. Спокойная атмосфера, честные правила, настоящее сообщество.">
+<meta name="twitter:image" content="https://jaroslavmazura10-web.github.io/avenor-vanilla/assets/images/og-image.png">
+
+<!-- Шрифты: Cinzel (заголовки), Manrope (текст), JetBrains Mono (лейблы/эйброу) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Favicon: SVG для современных браузеров + PNG-запасные варианты -->
+<link rel="icon" href="assets/icons/emblem.svg" type="image/svg+xml">
+<link rel="icon" href="assets/icons/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+</head>
+<body>
+
+  <!-- Анимированный фон с частицами (рисуется в script.js) -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- ================= НАВИГАЦИЯ ================= -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+
+      <div class="nav-pill glass">
+        <a href="#home" class="logo">
+          <span class="emblem-slot"></span>
+          <span class="logo-text">Avenor</span>
+        </a>
+
+        <nav class="nav-links" id="navLinks">
+          <a href="#about">О проекте</a>
+          <a href="#team">Команда</a>
+          <a href="#rules">Правила</a>
+          <a href="#connect">Подключение</a>
+          <a href="#faq">FAQ</a>
+          <a href="#news">Новости</a>
+          <a href="#contacts">Контакты</a>
+        </nav>
+      </div>
+
+      <div class="nav-side">
+        <a href="https://discord.gg/6YBYCDbmkH" class="nav-cta" target="_blank" rel="noopener noreferrer">Начать играть</a>
+        <a href="https://discord.gg/6YBYCDbmkH" class="nav-cta-icon" target="_blank" rel="noopener noreferrer" aria-label="Discord Avenor Vanilla">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.6L3 20l1-5.4A8.5 8.5 0 1 1 21 11.5Z"/></svg>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ================= ГЛАВНЫЙ ЭКРАН ================= -->
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+
+      <div class="hero-content">
+        <span class="launch-badge">Проект открывается — присоединяйтесь у истоков</span>
+
+        <h1>Avenor Vanilla</h1>
+        <p class="slogan">«Место, где создаётся история»</p>
+
+        <p class="desc">
+          Проект для тех, кто ищет спокойствие, честность и настоящих людей рядом.
+          Без спешки, без лишнего шума — только атмосфера, которую хочется возвращаться.
+        </p>
+
+        <div class="hero-actions">
+          <a href="https://discord.gg/6YBYCDbmkH" class="btn-primary" target="_blank" rel="noopener noreferrer">Начать играть</a>
+          <a href="#about" class="btn-ghost">Узнать больше</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="orbit-ring"></div>
+        <div class="orbit-ring orbit-ring--inner"></div>
+        <div class="hero-emblem emblem-slot"></div>
+      </div>
+
+    </div>
+
+    <!-- Честная сводка о проекте вместо придуманных цифр "онлайна" -->
+    <div class="hero-facts glass">
+      <div class="fact">
+        <span class="fact-label">Сезон</span>
+        <span class="fact-value">1</span>
+      </div>
+      <div class="fact">
+        <span class="fact-label">Открытие</span>
+        <span class="fact-value">Лето 2026</span>
+      </div>
+      <div class="fact">
+        <span class="fact-label">Вайтлист</span>
+        <span class="fact-value">Нет</span>
+      </div>
+      <div class="fact">
+        <span class="fact-label">Донат</span>
+        <span class="fact-value">Нет</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= О ПРОЕКТЕ ================= -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-grid">
+
+        <div class="reveal">
+          <span class="eyebrow">О проекте</span>
+          <h2 class="section-title">История, которую пишем вместе</h2>
+          <div class="divider"></div>
+          <p class="section-lead" style="margin-top:22px;">
+            Avenor Vanilla — это спокойный игровой проект без лишней суеты и агрессивной монетизации.
+            Мы делаем ставку на комфорт, доверие и долгую жизнь сервера — на нём приятно находиться
+            и через месяц, и через год.
+          </p>
+        </div>
+
+        <div class="values-list reveal">
+          <div class="value-item glass">
+            <span class="value-mark">01</span>
+            <div><h3>Дружелюбное сообщество</h3><p>Игроки, которые готовы помочь и поддержать новичка.</p></div>
+          </div>
+          <div class="value-item glass">
+            <span class="value-mark">02</span>
+            <div><h3>Комфортное общение</h3><p>Без токсичности — атмосфера, в которой хочется оставаться.</p></div>
+          </div>
+          <div class="value-item glass">
+            <span class="value-mark">03</span>
+            <div><h3>Честная игра</h3><p>Равные условия для всех, никаких скрытых преимуществ.</p></div>
+          </div>
+          <div class="value-item glass">
+            <span class="value-mark">04</span>
+            <div><h3>Развитие проекта</h3><p>Мы растём вместе с сообществом и слушаем каждого игрока.</p></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ПРЕИМУЩЕСТВА ================= -->
+  <section class="section" id="advantages">
+    <div class="container">
+      <span class="eyebrow reveal">Преимущества</span>
+      <h2 class="section-title reveal">На чём мы строим проект</h2>
+      <p class="section-lead reveal">Avenor Vanilla только открывается — но эти принципы для нас не обсуждаются с первого дня.</p>
+
+      <div class="cards-grid">
+        <div class="card glass reveal">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M17 20a5 5 0 0 0-10 0"/><circle cx="12" cy="9" r="4"/><path d="M21 20a5 5 0 0 0-4-4.9M3 20a5 5 0 0 1 4-4.9"/></svg>
+          <h3>Сообщество с нуля</h3>
+          <p>Мы собираем тёплую компанию единомышленников с первого игрока — и в этом главный смысл проекта.</p>
+        </div>
+        <div class="card glass reveal">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2 3 7v6c0 5 4 8 9 9 5-1 9-4 9-9V7z"/></svg>
+          <h3>Подготовленная инфраструктура</h3>
+          <p>Сервер настроен с расчётом на стабильную работу без лишних сбоев.</p>
+        </div>
+        <div class="card glass reveal">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 12a9 9 0 1 0 9-9"/><path d="M3 12h6M3 12l3-3M3 12l3 3"/></svg>
+          <h3>Планы на развитие</h3>
+          <p>Мы будем добавлять новое постепенно, прислушиваясь к тем, кто играет с нами с самого начала.</p>
+        </div>
+        <div class="card glass reveal">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          <h3>Открытая администрация</h3>
+          <p>Мы на связи в Discord и обещаем реагировать на вопросы и предложения игроков.</p>
+        </div>
+        <div class="card glass reveal">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="m12 2 2.6 6.6L21 11l-6.4 2.4L12 20l-2.6-6.6L3 11l6.4-2.4Z"/></svg>
+          <h3>Задуманная атмосфера</h3>
+          <p>Спокойный, тёплый мир — таким мы его создаём и хотим сохранить, пока проект растёт.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= КОМАНДА ================= -->
+  <section class="section" id="team">
+    <div class="container">
+      <span class="eyebrow reveal">Команда</span>
+      <h2 class="section-title reveal">Кто делает Avenor Vanilla</h2>
+      <p class="section-lead reveal">Коротко — кто стоит за проектом. Полный состав и роли — в отдельном канале нашего Discord.</p>
+
+      <div class="team-grid team-grid--compact">
+        <div class="team-card glass reveal">
+          <span class="team-avatar">M</span>
+          <h3>misgaaa <span class="team-alias">/ NexariDev</span></h3>
+          <span class="team-role">Создатель сервера, веб-разработчик</span>
+        </div>
+        <div class="team-card glass reveal">
+          <span class="team-avatar">N</span>
+          <h3>Nexor_ <span class="team-alias">/ Yaroslav</span></h3>
+          <span class="team-role">Веб-разработчик, ведёт Discord-сервер</span>
+        </div>
+        <div class="team-card glass reveal">
+          <span class="team-avatar">B</span>
+          <h3>_Brana4168_ <span class="team-alias">/ Brana</span></h3>
+          <span class="team-role">Возможная поддержка хостинга</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ПРАВИЛА ================= -->
+  <section class="section" id="rules">
+    <div class="container">
+      <span class="eyebrow reveal">Правила</span>
+      <h2 class="section-title reveal">Простые принципы для всех</h2>
+      <p class="section-lead reveal">Несколько базовых правил, которые делают Avenor Vanilla комфортным для каждого. Полный список правил — в официальном канале проекта в Discord.</p>
+
+      <div class="rules-grid">
+        <div class="rule-item glass reveal">
+          <span class="rule-num">1</span>
+          <div><h4>Уважение к участникам</h4><p>Мы ценим каждого — общение строится на вежливости и взаимном уважении.</p></div>
+        </div>
+        <div class="rule-item glass reveal">
+          <span class="rule-num">2</span>
+          <div><h4>Честное взаимодействие</h4><p>Обман, читы и манипуляции несовместимы с духом проекта.</p></div>
+        </div>
+        <div class="rule-item glass reveal">
+          <span class="rule-num">3</span>
+          <div><h4>Запрет нарушений</h4><p>Токсичность, оскорбления и деструктивное поведение пресекаются.</p></div>
+        </div>
+        <div class="rule-item glass reveal">
+          <span class="rule-num">4</span>
+          <div><h4>Комфорт для всех игроков</h4><p>Каждый должен чувствовать себя в безопасности, независимо от опыта.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= КАК ПОДКЛЮЧИТЬСЯ ================= -->
+  <section class="section" id="connect">
+    <div class="container">
+      <span class="eyebrow reveal">Подключение</span>
+      <h2 class="section-title reveal">Как подключиться</h2>
+      <p class="section-lead reveal">Вайтлиста нет — попасть на сервер можно за пару минут через простую верификацию.</p>
+
+      <div class="rules-grid">
+        <div class="rule-item glass reveal">
+          <span class="rule-num">1</span>
+          <div><h4>Заходите на сервер</h4><p>IP-адрес появится в Discord ближе к открытию проекта.</p></div>
+        </div>
+        <div class="rule-item glass reveal">
+          <span class="rule-num">2</span>
+          <div><h4>Получаете код</h4><p>При первом входе в чате появится четырёхзначный код подтверждения.</p></div>
+        </div>
+        <div class="rule-item glass reveal">
+          <span class="rule-num">3</span>
+          <div><h4>Вводите его в Discord</h4><p>Перейдите в канал верификации на нашем сервере и введите этот код.</p></div>
+        </div>
+        <div class="rule-item glass reveal">
+          <span class="rule-num">4</span>
+          <div><h4>Готово</h4><p>Вы подтверждены и можете играть — никакого отдельного вайтлиста проходить не нужно.</p></div>
+        </div>
+      </div>
+
+      <div class="mods-note glass reveal">
+        <span class="eyebrow">По желанию</span>
+        <p>Для более комфортной игры советуем установить моды <strong>PatPat</strong>, <strong>Simple Voice Chat</strong> и <strong>EmoteCraft</strong> — они не обязательны, но делают игру приятнее.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FAQ ================= -->
+  <section class="section" id="faq">
+    <div class="container">
+      <span class="eyebrow reveal">FAQ</span>
+      <h2 class="section-title reveal">Частые вопросы</h2>
+      <p class="section-lead reveal">Коротко о том, что чаще всего спрашивают до запуска.</p>
+
+      <div class="faq-list">
+        <details class="faq-item glass reveal">
+          <summary>Что вообще за проект Avenor Vanilla?</summary>
+          <p>Это ванильный сервер в формате «Vanilla+» — классическая игра, дополненная несколькими лёгкими плагинами для удобства, без резких изменений баланса.</p>
+        </details>
+        <details class="faq-item glass reveal">
+          <summary>Нужен ли вайтлист?</summary>
+          <p>Нет, отдельного вайтлиста нет. Достаточно пройти простую верификацию — ввести код из игры в Discord-канале.</p>
+        </details>
+        <details class="faq-item glass reveal">
+          <summary>Есть ли донат?</summary>
+          <p>Пока доната нет.</p>
+        </details>
+        <details class="faq-item glass reveal">
+          <summary>Когда открытие сервера?</summary>
+          <p>Ориентировочно конец июля — начало августа 2026 года. Точную дату объявим в Discord.</p>
+        </details>
+        <details class="faq-item glass reveal">
+          <summary>На какой версии игры будет сервер?</summary>
+          <p>Версию и технические требования объявим в Discord ближе к запуску.</p>
+        </details>
+        <details class="faq-item glass reveal">
+          <summary>Можно ли предложить свою идею для проекта?</summary>
+          <p>Да, мы открыты к предложениям — делитесь идеями в Discord, самые удачные обязательно рассмотрим.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= НОВОСТИ ================= -->
+  <section class="section" id="news">
+    <div class="container">
+      <span class="eyebrow reveal">Новости</span>
+      <h2 class="section-title reveal">Что происходит на проекте</h2>
+      <p class="section-lead reveal">Мы только начинаем — вот первые шаги Avenor Vanilla.</p>
+
+      <div class="news-grid">
+        <article class="news-card glass reveal">
+          <div class="news-thumb"><span class="emblem-slot"></span></div>
+          <div class="news-body">
+            <span class="news-date">Скоро</span>
+            <h3>Открытие проекта</h3>
+            <p>Мы готовим официальный запуск сервера и открываем набор в сообщество Avenor Vanilla.</p>
+          </div>
+        </article>
+        <article class="news-card glass reveal">
+          <div class="news-thumb"><span class="emblem-slot"></span></div>
+          <div class="news-body">
+            <span class="news-date">Уже открыт</span>
+            <h3>Discord-сервер запущен</h3>
+            <p>Присоединяйтесь заранее — обсуждайте проект с другими игроками и следите за анонсами запуска.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= DISCORD ================= -->
+  <section class="section" id="discord">
+    <div class="container">
+      <div class="discord-panel glass reveal">
+        <span class="eyebrow">Discord</span>
+        <h3>Присоединяйтесь к нашему сообществу</h3>
+        <p>Общайтесь с другими игроками, следите за новостями и участвуйте в жизни проекта в нашем Discord.</p>
+        <a href="https://discord.gg/6YBYCDbmkH" class="btn-primary" target="_blank" rel="noopener noreferrer">Вступить в Discord</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= КОНТАКТЫ ================= -->
+  <section class="section" id="contacts">
+    <div class="container">
+      <span class="eyebrow reveal">Контакты</span>
+      <h2 class="section-title reveal">Связь и полезные ссылки</h2>
+
+      <div class="contacts-grid">
+        <div class="contact-item glass reveal">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.6L3 20l1-5.4A8.5 8.5 0 1 1 21 11.5Z"/></svg>
+          <div><div class="label">Discord</div><div class="value"><a href="https://discord.gg/6YBYCDbmkH" target="_blank" rel="noopener noreferrer">discord.gg/6YBYCDbmkH</a></div></div>
+        </div>
+        <div class="contact-item glass reveal">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 22s8-4.5 8-11a8 8 0 1 0-16 0c0 6.5 8 11 8 11Z"/><circle cx="12" cy="11" r="2.5"/></svg>
+          <div><div class="label">IP сервера</div><div class="value">Скоро</div></div>
+        </div>
+        <div class="contact-item glass reveal">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+          <div><div class="label">Время работы</div><div class="value">24/7</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ПОДВАЛ ================= -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <span class="emblem-slot"></span>
+          Avenor Vanilla
+        </div>
+        <nav class="footer-nav">
+          <a href="#about">О проекте</a>
+          <a href="#advantages">Преимущества</a>
+          <a href="#team">Команда</a>
+          <a href="#rules">Правила</a>
+          <a href="#connect">Подключение</a>
+          <a href="#faq">FAQ</a>
+          <a href="#news">Новости</a>
+          <a href="#discord">Discord</a>
+          <a href="#contacts">Контакты</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Avenor Vanilla. Все права защищены.</span>
+        <span>Место, где создаётся история.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
